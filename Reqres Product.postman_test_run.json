@@ -1,0 +1,706 @@
+{
+	"id": "b57e2236-b290-48cd-982d-1695d19ceef0",
+	"name": "Reqres Product",
+	"timestamp": "2026-08-25T09:49:52.824Z",
+	"collection_id": "53408241-54763722-8221-474a-b89b-598e829df260",
+	"folder_id": 0,
+	"environment_id": "53408241-100c902f-3dfc-42ee-8b68-fc1311012230",
+	"totalPass": 162,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-08-25T09:49:39.534Z",
+	"totalFail": 67,
+	"results": [
+		{
+			"id": "421fdbf4-875d-46e5-8792-ac6ce1c8a3b0",
+			"name": "Login",
+			"url": "https://reqres.in/api/login",
+			"time": 188,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				342,
+				188,
+				188,
+				193,
+				188
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true
+				},
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true
+				},
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true
+				},
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true
+				},
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "9f3d9863-31b1-4fe0-b272-1061d361e607",
+			"name": "Create record",
+			"url": "https://reqres.in/api/collections/products/records?project_id=9537",
+			"time": 199,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"POST - Status Code": true,
+				"POST - Name Field Validation": true,
+				"POST - Category Field Validation": true,
+				"POST - Price Field Validation": true,
+				"POST - Instock Field Validation": true,
+				"POST Response - ID Validation": true,
+				"POST Response - Name Validation": true,
+				"POST Response - Category Validation": true,
+				"POST Response - Price Validation": true,
+				"POST Response - Instock Validation": true,
+				"POST - Schema Validation": false
+			},
+			"testPassFailCounts": {
+				"POST - Status Code": {
+					"pass": 1,
+					"fail": 4
+				},
+				"POST - Name Field Validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"POST - Category Field Validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"POST - Price Field Validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"POST - Instock Field Validation": {
+					"pass": 5,
+					"fail": 0
+				},
+				"POST - Negative Validation": {
+					"pass": 0,
+					"fail": 4
+				},
+				"POST Response - ID Validation": {
+					"pass": 5,
+					"fail": 0
+				},
+				"POST Response - Name Validation": {
+					"pass": 5,
+					"fail": 0
+				},
+				"POST Response - Category Validation": {
+					"pass": 5,
+					"fail": 0
+				},
+				"POST Response - Price Validation": {
+					"pass": 3,
+					"fail": 2
+				},
+				"POST Response - Instock Validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"POST - Schema Validation": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				209,
+				206,
+				194,
+				195,
+				199
+			],
+			"allTests": [
+				{
+					"POST - Status Code": false,
+					"POST - Name Field Validation": false,
+					"POST - Category Field Validation": true,
+					"POST - Price Field Validation": true,
+					"POST - Instock Field Validation": true,
+					"POST - Negative Validation": false,
+					"POST Response - ID Validation": true,
+					"POST Response - Name Validation": true,
+					"POST Response - Category Validation": true,
+					"POST Response - Price Validation": true,
+					"POST Response - Instock Validation": true,
+					"POST - Schema Validation": false
+				},
+				{
+					"POST - Status Code": false,
+					"POST - Name Field Validation": true,
+					"POST - Category Field Validation": false,
+					"POST - Price Field Validation": true,
+					"POST - Instock Field Validation": true,
+					"POST - Negative Validation": false,
+					"POST Response - ID Validation": true,
+					"POST Response - Name Validation": true,
+					"POST Response - Category Validation": true,
+					"POST Response - Price Validation": true,
+					"POST Response - Instock Validation": true,
+					"POST - Schema Validation": false
+				},
+				{
+					"POST - Status Code": false,
+					"POST - Name Field Validation": true,
+					"POST - Category Field Validation": true,
+					"POST - Price Field Validation": true,
+					"POST - Instock Field Validation": true,
+					"POST - Negative Validation": false,
+					"POST Response - ID Validation": true,
+					"POST Response - Name Validation": true,
+					"POST Response - Category Validation": true,
+					"POST Response - Price Validation": false,
+					"POST Response - Instock Validation": true,
+					"POST - Schema Validation": false
+				},
+				{
+					"POST - Status Code": false,
+					"POST - Name Field Validation": true,
+					"POST - Category Field Validation": true,
+					"POST - Price Field Validation": false,
+					"POST - Instock Field Validation": true,
+					"POST - Negative Validation": false,
+					"POST Response - ID Validation": true,
+					"POST Response - Name Validation": true,
+					"POST Response - Category Validation": true,
+					"POST Response - Price Validation": false,
+					"POST Response - Instock Validation": false,
+					"POST - Schema Validation": false
+				},
+				{
+					"POST - Status Code": true,
+					"POST - Name Field Validation": true,
+					"POST - Category Field Validation": true,
+					"POST - Price Field Validation": true,
+					"POST - Instock Field Validation": true,
+					"POST Response - ID Validation": true,
+					"POST Response - Name Validation": true,
+					"POST Response - Category Validation": true,
+					"POST Response - Price Validation": true,
+					"POST Response - Instock Validation": true,
+					"POST - Schema Validation": false
+				}
+			]
+		},
+		{
+			"id": "a774be87-b644-4cca-b606-af57cbcb7cd0",
+			"name": "List Records",
+			"url": "https://reqres.in/api/collections/products/records?project_id=9537",
+			"time": 314,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response is JSON": true,
+				"GET List - Response data validation": true,
+				"GET List - ID validation": true,
+				"GET List - Name validation": false,
+				"GET List - Price validation": false,
+				"GET List - Category validation": false,
+				"GET List - In Stock validation": false,
+				"GET List - Schema validation": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 5,
+					"fail": 0
+				},
+				"GET List - Response data validation": {
+					"pass": 5,
+					"fail": 0
+				},
+				"GET List - ID validation": {
+					"pass": 5,
+					"fail": 0
+				},
+				"GET List - Name validation": {
+					"pass": 0,
+					"fail": 5
+				},
+				"GET List - Price validation": {
+					"pass": 0,
+					"fail": 5
+				},
+				"GET List - Category validation": {
+					"pass": 0,
+					"fail": 5
+				},
+				"GET List - In Stock validation": {
+					"pass": 0,
+					"fail": 5
+				},
+				"GET List - Schema validation": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				440,
+				322,
+				313,
+				315,
+				314
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response is JSON": true,
+					"GET List - Response data validation": true,
+					"GET List - ID validation": true,
+					"GET List - Name validation": false,
+					"GET List - Price validation": false,
+					"GET List - Category validation": false,
+					"GET List - In Stock validation": false,
+					"GET List - Schema validation": false
+				},
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response is JSON": true,
+					"GET List - Response data validation": true,
+					"GET List - ID validation": true,
+					"GET List - Name validation": false,
+					"GET List - Price validation": false,
+					"GET List - Category validation": false,
+					"GET List - In Stock validation": false,
+					"GET List - Schema validation": false
+				},
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response is JSON": true,
+					"GET List - Response data validation": true,
+					"GET List - ID validation": true,
+					"GET List - Name validation": false,
+					"GET List - Price validation": false,
+					"GET List - Category validation": false,
+					"GET List - In Stock validation": false,
+					"GET List - Schema validation": false
+				},
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response is JSON": true,
+					"GET List - Response data validation": true,
+					"GET List - ID validation": true,
+					"GET List - Name validation": false,
+					"GET List - Price validation": false,
+					"GET List - Category validation": false,
+					"GET List - In Stock validation": false,
+					"GET List - Schema validation": false
+				},
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response is JSON": true,
+					"GET List - Response data validation": true,
+					"GET List - ID validation": true,
+					"GET List - Name validation": false,
+					"GET List - Price validation": false,
+					"GET List - Category validation": false,
+					"GET List - In Stock validation": false,
+					"GET List - Schema validation": false
+				}
+			]
+		},
+		{
+			"id": "32385d17-5415-4036-8353-bc0dfa7d71d8",
+			"name": "Get Record",
+			"url": "https://reqres.in/api/collections/products/records/3000949c-5db4-487e-a13b-f10fa4b5573d?project_id=9537",
+			"time": 318,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"GET - Status code validation": true,
+				"GET - Response is JSON": true,
+				"GET - Response data validation": true,
+				"GET - Schema validation": true,
+				"GET - ID validation": true,
+				"GET - Name validation": true,
+				"GET - Category validation": true,
+				"GET - Price validation": true,
+				"GET - InStock validation": true,
+				"GET - Name matches created record": true,
+				"GET - Category matches created record": true,
+				"GET - Price matches created record": true,
+				"GET - InStock matches created record": true
+			},
+			"testPassFailCounts": {
+				"GET - Status code validation": {
+					"pass": 5,
+					"fail": 0
+				},
+				"GET - Response is JSON": {
+					"pass": 5,
+					"fail": 0
+				},
+				"GET - Response data validation": {
+					"pass": 5,
+					"fail": 0
+				},
+				"GET - Schema validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"GET - ID validation": {
+					"pass": 5,
+					"fail": 0
+				},
+				"GET - Name validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"GET - Category validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"GET - Price validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"GET - InStock validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"GET - Name matches created record": {
+					"pass": 5,
+					"fail": 0
+				},
+				"GET - Category matches created record": {
+					"pass": 5,
+					"fail": 0
+				},
+				"GET - Price matches created record": {
+					"pass": 5,
+					"fail": 0
+				},
+				"GET - InStock matches created record": {
+					"pass": 4,
+					"fail": 1
+				}
+			},
+			"times": [
+				323,
+				321,
+				318,
+				317,
+				318
+			],
+			"allTests": [
+				{
+					"GET - Status code validation": true,
+					"GET - Response is JSON": true,
+					"GET - Response data validation": true,
+					"GET - Schema validation": true,
+					"GET - ID validation": true,
+					"GET - Name validation": false,
+					"GET - Category validation": true,
+					"GET - Price validation": true,
+					"GET - InStock validation": true,
+					"GET - Name matches created record": true,
+					"GET - Category matches created record": true,
+					"GET - Price matches created record": true,
+					"GET - InStock matches created record": true
+				},
+				{
+					"GET - Status code validation": true,
+					"GET - Response is JSON": true,
+					"GET - Response data validation": true,
+					"GET - Schema validation": true,
+					"GET - ID validation": true,
+					"GET - Name validation": true,
+					"GET - Category validation": false,
+					"GET - Price validation": true,
+					"GET - InStock validation": true,
+					"GET - Name matches created record": true,
+					"GET - Category matches created record": true,
+					"GET - Price matches created record": true,
+					"GET - InStock matches created record": true
+				},
+				{
+					"GET - Status code validation": true,
+					"GET - Response is JSON": true,
+					"GET - Response data validation": true,
+					"GET - Schema validation": true,
+					"GET - ID validation": true,
+					"GET - Name validation": true,
+					"GET - Category validation": true,
+					"GET - Price validation": false,
+					"GET - InStock validation": true,
+					"GET - Name matches created record": true,
+					"GET - Category matches created record": true,
+					"GET - Price matches created record": true,
+					"GET - InStock matches created record": true
+				},
+				{
+					"GET - Status code validation": true,
+					"GET - Response is JSON": true,
+					"GET - Response data validation": true,
+					"GET - Schema validation": false,
+					"GET - ID validation": true,
+					"GET - Name validation": true,
+					"GET - Category validation": true,
+					"GET - Price validation": true,
+					"GET - InStock validation": false,
+					"GET - Name matches created record": true,
+					"GET - Category matches created record": true,
+					"GET - Price matches created record": true,
+					"GET - InStock matches created record": false
+				},
+				{
+					"GET - Status code validation": true,
+					"GET - Response is JSON": true,
+					"GET - Response data validation": true,
+					"GET - Schema validation": true,
+					"GET - ID validation": true,
+					"GET - Name validation": true,
+					"GET - Category validation": true,
+					"GET - Price validation": true,
+					"GET - InStock validation": true,
+					"GET - Name matches created record": true,
+					"GET - Category matches created record": true,
+					"GET - Price matches created record": true,
+					"GET - InStock matches created record": true
+				}
+			]
+		},
+		{
+			"id": "872e4739-e7b9-4765-b324-1906fa2ac893",
+			"name": "Update record",
+			"url": "https://reqres.in/api/collections/products/records/3000949c-5db4-487e-a13b-f10fa4b5573d?project_id=9537",
+			"time": 194,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"PUT - Status Code": true,
+				"PUT - Positive Validation": true,
+				"PUT - ID Validation": true,
+				"PUT - Name Field Validation": true,
+				"PUT - Category Field Validation": true,
+				"PUT - Price Field Validation": true,
+				"PUT - In Stock Field Validation": true,
+				"PUT - Schema Validation": false
+			},
+			"testPassFailCounts": {
+				"PUT - Status Code": {
+					"pass": 1,
+					"fail": 4
+				},
+				"PUT - Negative Validation": {
+					"pass": 0,
+					"fail": 4
+				},
+				"PUT - ID Validation": {
+					"pass": 5,
+					"fail": 0
+				},
+				"PUT - Name Field Validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"PUT - Category Field Validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"PUT - Price Field Validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"PUT - In Stock Field Validation": {
+					"pass": 4,
+					"fail": 1
+				},
+				"PUT - Schema Validation": {
+					"pass": 0,
+					"fail": 5
+				},
+				"PUT - Positive Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				212,
+				197,
+				195,
+				194,
+				194
+			],
+			"allTests": [
+				{
+					"PUT - Status Code": false,
+					"PUT - Negative Validation": false,
+					"PUT - ID Validation": true,
+					"PUT - Name Field Validation": false,
+					"PUT - Category Field Validation": true,
+					"PUT - Price Field Validation": true,
+					"PUT - In Stock Field Validation": true,
+					"PUT - Schema Validation": false
+				},
+				{
+					"PUT - Status Code": false,
+					"PUT - Negative Validation": false,
+					"PUT - ID Validation": true,
+					"PUT - Name Field Validation": true,
+					"PUT - Category Field Validation": false,
+					"PUT - Price Field Validation": true,
+					"PUT - In Stock Field Validation": true,
+					"PUT - Schema Validation": false
+				},
+				{
+					"PUT - Status Code": false,
+					"PUT - Negative Validation": false,
+					"PUT - ID Validation": true,
+					"PUT - Name Field Validation": true,
+					"PUT - Category Field Validation": true,
+					"PUT - Price Field Validation": false,
+					"PUT - In Stock Field Validation": true,
+					"PUT - Schema Validation": false
+				},
+				{
+					"PUT - Status Code": false,
+					"PUT - Negative Validation": false,
+					"PUT - ID Validation": true,
+					"PUT - Name Field Validation": true,
+					"PUT - Category Field Validation": true,
+					"PUT - Price Field Validation": true,
+					"PUT - In Stock Field Validation": false,
+					"PUT - Schema Validation": false
+				},
+				{
+					"PUT - Status Code": true,
+					"PUT - Positive Validation": true,
+					"PUT - ID Validation": true,
+					"PUT - Name Field Validation": true,
+					"PUT - Category Field Validation": true,
+					"PUT - Price Field Validation": true,
+					"PUT - In Stock Field Validation": true,
+					"PUT - Schema Validation": false
+				}
+			]
+		},
+		{
+			"id": "38c3013b-fd17-4145-9e6d-bcb9317edf4b",
+			"name": "Delete record",
+			"url": "https://reqres.in/api/collections/products/records/3000949c-5db4-487e-a13b-f10fa4b5573d?project_id=9537",
+			"time": 190,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				193,
+				188,
+				194,
+				190,
+				190
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				},
+				{
+					"Status code is 204": true
+				},
+				{
+					"Status code is 204": true
+				},
+				{
+					"Status code is 204": true
+				},
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 7350,
+	"collection": {
+		"requests": [
+			{
+				"id": "421fdbf4-875d-46e5-8792-ac6ce1c8a3b0",
+				"method": "POST"
+			},
+			{
+				"id": "9f3d9863-31b1-4fe0-b272-1061d361e607",
+				"method": "POST"
+			},
+			{
+				"id": "a774be87-b644-4cca-b606-af57cbcb7cd0",
+				"method": "GET"
+			},
+			{
+				"id": "32385d17-5415-4036-8353-bc0dfa7d71d8",
+				"method": "GET"
+			},
+			{
+				"id": "872e4739-e7b9-4765-b324-1906fa2ac893",
+				"method": "PUT"
+			},
+			{
+				"id": "38c3013b-fd17-4145-9e6d-bcb9317edf4b",
+				"method": "DELETE"
+			}
+		]
+	}
+}
