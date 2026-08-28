@@ -1,10 +1,10 @@
 {
   "info": {
-    "_postman_id": "54763722-8221-474a-b89b-598e829df260",
+    "_postman_id": "0c307f18-9dd5-49ef-a6a4-933ff825626d",
     "name": "Reqres Product",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "53408241",
-    "_collection_link": "https://go.postman.co/collection/53408241-54763722-8221-474a-b89b-598e829df260?source=collection_link"
+    "_exporter_id": "57408628",
+    "_collection_link": "https://go.postman.co/collection/57408628-0c307f18-9dd5-49ef-a6a4-933ff825626d?source=collection_link"
   },
   "item": [
     {
@@ -933,7 +933,7 @@
           "listen": "test",
           "script": {
             "exec": [
-              "const r=pm.response.json();",
+              "const m=pm.response.json();",
               "",
               "const i=pm.info.iteration;",
               "",
@@ -965,15 +965,15 @@
               "",
               "}",
               "",
-              "if(r.data&&r.data.data){",
+              "if(r.data&&m.data.data){",
               "",
-              "    const d=r.data.data;",
+              "    const d=m.data.data;",
               "",
               "    pm.test(\"PUT - ID Validation\",function(){",
               "",
-              "        pm.expect(r.data.id).to.exist;",
+              "        pm.expect(m.data.id).to.exist;",
               "",
-              "        pm.expect(r.data.id).to.be.a(\"string\");",
+              "        pm.expect(m.data.id).to.be.a(\"string\");",
               "",
               "    });",
               "",
@@ -1023,7 +1023,7 @@
               "",
               "pm.test(\"PUT - Schema Validation\",function(){",
               "",
-              "    if(r.data&&r.data.data){",
+              "    if(r.data&&m.data.data){",
               "",
               "        const schema={",
               "",
@@ -1085,27 +1085,27 @@
               "",
               "        };",
               "",
-              "        pm.expect(r).to.have.jsonSchema(schema);",
+              "        pm.expect(m).to.have.jsonSchema(schema);",
               "",
               "    }",
               "",
               "});",
               "",
-              "if(r.data&&r.data.id){",
+              "if(m.data&&m.data.id){",
               "",
-              "    pm.environment.set(\"created_id\",r.data.id);",
+              "    pm.environment.set(\"created_id\",m.data.id);",
               "",
               "}",
               "",
-              "if(r.data&&r.data.data){",
+              "if(m.data&&m.data.data){",
               "",
-              "    pm.environment.set(\"created_name\",r.data.data.name);",
+              "    pm.environment.set(\"created_name\",m.data.data.name);",
               "",
-              "    pm.environment.set(\"created_category\",r.data.data.category);",
+              "    pm.environment.set(\"created_category\",m.data.data.category);",
               "",
-              "    pm.environment.set(\"created_price\",r.data.data.price);",
+              "    pm.environment.set(\"created_price\",m.data.data.price);",
               "",
-              "    pm.environment.set(\"created_instock\",r.data.data.instock);",
+              "    pm.environment.set(\"created_instock\",m.data.data.instock);",
               "",
               "}"
             ],
@@ -1211,7 +1211,7 @@
     "bearer": [
       {
         "key": "token",
-        "value": "QpwL5tke4Pnpja7X4",
+        "value": "{{auth_secret_02xj}}",
         "type": "string"
       }
     ]
@@ -1270,6 +1270,18 @@
     {
       "key": "createdInStock",
       "value": "true"
+    },
+    {
+      "key": "auth_secret_02xj",
+      "secret": true,
+      "source": {
+        "provider": "postman",
+        "postman": {
+          "type": "cloud",
+          "secretId": "2dd06f04-5912-4559-ba98-be5677352e7d",
+          "vaultId": "cb166360-1b43-42fa-851f-baad45c4a760"
+        }
+      }
     }
   ]
 }
