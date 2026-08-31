@@ -1,57 +1,38 @@
 pipeline{
     agent any
     stages{
-        stage('Run Postman Collections'){
+        stage('Run Postman Scenarios'){
            steps{
 bat'''
 @echo off
-
+for /d %%S in (run\\*) do (
              echo
 ==========================================================
-              echo Running Postman Collections
+              echo Running Scenario:%%S
               echo
 ===========================================================
 
-for /r %%C in (*.postman_collection.json) do (
-                 echo.
-                 echo Collection:%%C
+for  %%C in ("%%S\\*.postman_collection.json") do (
+set COLLECTION=%%C
+)
+
+for  %%E in ("%%S\\*.postman_environment.json") do (
+set ENVIRONMENT=%%E
+)
+                if exist "%%S\\data.json"(
+                newman run "!COLLECTION!" -e "!ENVIRONMENT!" -d "%%S\\data.json" -r html --reporter-html-extra "report.html"
+                )else (
+                newman run "!COLLECTION!" -e "!ENVIRONMENT!" -r html --reporter-html-extra "report.html"
+                )
+                )
+                '''
+           }
+        }
+    }
+}
    
-        if not exist "%%~dpC*.postman_environment.json"(
-                              echo ERROR:
-     Environment file not found
-                          exit /b 1
-)
-                   for %%E in("%%~dpC*.postman_environment.json") do (
-        echo 
-   Environment: %%E
-
-                           if exist"%%~dpCdata.json"(
-                        echo Data file found 
-                        echo Running with data file...
-
-   newman run "%%C" -e "%%E"
-)
-    if errorlevel1(
-echo Newman execution failed 
-    exit /b 1
-)
-)
-)
-
-
-              echo,
-              echo
-=====================================================================
-               echo All Collections Completed
-               echo
-======================================================================
-'''
-}
-}
-}
-}
+     
 
 
 
-    
-}
+
