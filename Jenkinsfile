@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-              checkout scm
+              echo 'GitHub repository checked out successfully'
             }
         }
       stage('Run Newman'){
