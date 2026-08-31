@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage('Run Postman Scenario'){
+        stage('Run Postman Scenario check'){
            steps{
 bat'''
 @echo off
