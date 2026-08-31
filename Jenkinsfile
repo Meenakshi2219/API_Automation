@@ -5,10 +5,13 @@ pipeline{
            steps{
 bat'''
 @echo off
+setlocal enabledelayedexpansion
 for /d %%S in (run\\*) do (
+             echo.
              echo
 ==========================================================
               echo Running Scenario:%%S
+              echo.
               echo
 ===========================================================
 
