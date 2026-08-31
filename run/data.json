@@ -1,0 +1,93 @@
+
+[
+  {
+    "testCase": "TC01 - Invalid Empty Name",
+    "postName": "",
+    "postPrice": 59.99,
+    "postCategory": "Electronics",
+    "postStock": true,
+
+    "putName": "",
+    "putPrice": 69.99,
+    "putCategory": "Electronics",
+    "putStock": true,
+
+    "postExpectedStatus": 400,
+    "putExpectedStatus": 400
+  },
+  {
+    "testCase": "TC02 - Invalid Negative Price",
+    "postName": "Wireless Headphones",
+    "postPrice": -10,
+    "postCategory": "Electronics",
+    "postStock": true,
+
+    "putName": "Updated Headphones",
+    "putPrice": -20,
+    "putCategory": "Electronics",
+    "putStock": true,
+
+    "postExpectedStatus": 400,
+    "putExpectedStatus": 400
+  },
+  {
+    "testCase": "TC03 - Invalid Empty Category",
+    "postName": "Wireless Headphones",
+    "postPrice": 59.99,
+    "postCategory": "",
+    "postStock": true,
+
+    "putName": "Updated Headphones",
+    "putPrice": 69.99,
+    "putCategory": "",
+    "putStock": true,
+
+    "postExpectedStatus": 400,
+    "putExpectedStatus": 400
+  },
+  {
+    "testCase": "TC04 - Invalid Price Type",
+    "postName": "Wireless Headphones",
+    "postPrice": "invalid",
+    "postCategory": "Electronics",
+    "postStock": true,
+
+    "putName": "Updated Headphones",
+    "putPrice": "invalid",
+    "putCategory": "Electronics",
+    "putStock": true,
+
+    "postExpectedStatus": 400,
+    "putExpectedStatus": 400
+  },
+  {
+    "testCase": "TC05 - Invalid Stock Type",
+    "postName": "Wireless Headphones",
+    "postPrice": 59.99,
+    "postCategory": "Electronics",
+    "postStock": "yes",
+
+    "putName": "Updated Headphones",
+    "putPrice": 69.99,
+    "putCategory": "Electronics",
+    "putStock": "yes",
+
+    "postExpectedStatus": 400,
+    "putExpectedStatus": 400
+  },
+  {
+    "testCase": "TC06 - Valid POST and PUT",
+    "postName": "Wireless Headphones",
+    "postPrice": 59.99,
+    "postCategory": "Electronics",
+    "postStock": true,
+
+    "putName": "Updated Wireless Headphones",
+    "putPrice": 69.99,
+    "putCategory": "Electronics",
+    "putStock": true,
+
+    "postExpectedStatus": 201,
+    "putExpectedStatus": 200
+  }
+]
