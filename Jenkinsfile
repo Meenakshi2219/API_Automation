@@ -6,7 +6,7 @@ pipeline{
 bat'''
 @echo off
 setlocal enabledelayedexpansion
-for /d %%S in (run\*) do (
+for /d %%S in (run\\*) do (
              echo.
              echo
 ==========================================================
