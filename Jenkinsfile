@@ -22,9 +22,9 @@ set COLLECTION=%%C
 for  %%E in ("%%S\\*.postman_environment.json") do (
 set ENVIRONMENT=%%E
 )
-                if exist "%%S\\data.json"(
+                if exist "%%S\\data.json" (
                 newman run "!COLLECTION!" -e "!ENVIRONMENT!" -d "%%S\\data.json" -r html --reporter-html-extra "report.html"
-                )else (
+                ) else (
                 newman run "!COLLECTION!" -e "!ENVIRONMENT!" -r html --reporter-html-extra "report.html"
                 )
                 )
