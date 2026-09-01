@@ -6,7 +6,7 @@ pipeline{
 bat'''
 @echo off
 setlocal enabledelayedexpansion
-for /d %%S in (run\\*) do (
+for /d %%S in (run\*) do (
              echo.
              echo
 ==========================================================
@@ -15,7 +15,7 @@ for /d %%S in (run\\*) do (
               echo
 ===========================================================
 
-for  %%C in ("%%S\\*.postman_collection.json") do (
+for  %%C in ("%%S\*.postman_collection.json") do (
 set COLLECTION=%%C
 )
 
