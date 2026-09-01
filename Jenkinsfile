@@ -10,7 +10,7 @@ for /d %%S in (run\\*) do (
              echo.
              echo
 ==========================================================
-              echo Rnning Scenario:%%S
+              echo Running Scenario:%%S
 ===========================================================
   echo
   echo.
