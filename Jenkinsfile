@@ -15,7 +15,7 @@ for /d %%S in (run\\*) do (
               echo
 ===========================================================
 
-for  %%C in ("%%S\*.postman_collection.json") do (
+for  %%C in ("%%S\\*.postman_collection.json") do (
 set COLLECTION=%%C
 )
 
