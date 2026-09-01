@@ -175,7 +175,7 @@
               "    });\r",
               "\r",
               "pm.test(\"POST - Name validation\", function () {\r",
-              "pm.expect(response.data.data.name).to.eql(\r",
+              "pm.expect(response.data.name).to.eql(\r",
               "pm.iterationData.get(\"postName\")\r",
               ");\r",
               "});\r",
